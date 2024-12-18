@@ -6,7 +6,6 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from chatbot import get_chatbot_response
 
-
 load_dotenv()
 
 app = Flask(__name__)
@@ -70,9 +69,9 @@ def test_users():
         print(e)
         return jsonify({"error": str(e)}), 500    
 
-
+port = int(os.getenv('PORT', 5000))
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=port)
 
 # print(chat_completion.choices[0].message.content)
 # print(chat_completion)
