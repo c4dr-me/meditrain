@@ -4,7 +4,7 @@ from groq import Groq
 import requests
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from backend.chatbot import get_chatbot_response
+from chatbot import get_chatbot_response
 
 
 load_dotenv()
