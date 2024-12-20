@@ -3,7 +3,7 @@ groq
 requests
 Flask_cors
 Flask
-langchain==0.1.16
+langchain==0.3.13
 langchain-core
 langchain-groq
 gunicorn
