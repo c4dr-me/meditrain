@@ -112,7 +112,7 @@ def format_response_with_beautifulsoup(response):
         if tag.name == 'li':
             tag['style'] = 'padding-top: 5px; padding-bottom: 5px;'
         elif tag.name == 'p':
-            tag['style'] = 'padding-top: 5px; padding-bottom: 15px; '
+            tag['style'] = 'padding-top: 5px; padding-bottom: 10px; '
         
     # for ul in soup.find_all('ul'):
     #     ul['style'] = 'padding-top: 5px; padding-bottom: 15px;, text-decoration: underline;'    
